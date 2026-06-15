@@ -1,36 +1,335 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Premier Site Simple</title>
-    </head>
+    <title>Bonne Anniversaire My Everything ❤️</title>
+    <!-- استيراد خطوط مميزة جداً تحاكي الكتابة اليدوية والحبر والإحساس الدافئ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Reem_Kufi:wght@500;700&family=Tajawal:wght@500;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* ألوان مكان دافئ وجميل (خلفية الشفق والشموع) */
+            --bg-cozy: linear-gradient(180deg, #1a1c29 0%, #2c1a24 50%, #482030 100%);
+            --paper-color: #fbf5e6; /* ورق قديم مكتوب بالحبر */
+            --ink-color: #2b181d;   /* لون الحبر الداكن */
+            --accent-gold: #ffd166;
+            --rose-pink: #ff758f;
+            --btn-shadow: rgba(255, 117, 143, 0.2);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: var(--bg-cozy);
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            min-height: 100vh;
+            overflow-x: hidden;
+            font-family: 'Tajawal', sans-serif;
+            position: relative;
+        }
+
+        /* تأثير النجوم المتلألئة في المكان الجميل */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: radial-gradient(#ffffff 1px, transparent 1px), radial-gradient(#ffffff 1px, transparent 1px);
+            background-size: 40px 40px;
+            background-position: 0 0, 20px 20px;
+            opacity: 0.15;
+            z-index: 0;
+            animation: twinkle 4s infinite linear;
+        }
+
+        @keyframes twinkle {
+            0% { opacity: 0.15; }
+            50% { opacity: 0.3; }
+            100% { opacity: 0.15; }
+        }
+
+        .container {
+            max-width: 480px;
+            margin: 20px auto;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* شارات دافئة عصرية */
+        .badge-box {
+            margin-bottom: 20px;
+        }
+        .stats-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            color: var(--accent-gold);
+            padding: 8px 18px;
+            border-radius: 25px;
+            font-size: 0.95rem;
+            font-weight: 800;
+            margin: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            direction: rtl;
+        }
+
+        h1 {
+            font-family: 'Caveat', cursive;
+            color: #fff;
+            font-size: 2.8rem;
+            text-shadow: 0 0 15px rgba(255,117,143,0.6);
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        /* سيكشن التهنئة الرئيسية: ستايل ورق الحبر الحقيقي */
+        .main-wish {
+            background: var(--paper-color);
+            color: var(--ink-color);
+            padding: 25px;
+            border-radius: 24px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4), inset 0 0 20px rgba(0,0,0,0.05);
+            text-align: left;
+            line-height: 1.8;
+            font-size: 1.15rem;
+            font-weight: 700;
+            border-left: 6px solid var(--rose-pink);
+            direction: ltr;
+            transform: rotate(-1deg); /* جعلها تبدو كورقة ملقاة على طاولة */
+            position: relative;
+        }
+        
+        /* إضافة فتحة دبوس أو شريط لاصق جمالي فوق الورقة */
+        .main-wish::before {
+            content: "📌";
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.5rem;
+        }
+
+        /* أزرار بحلة جديدة تفاعلية بالكامل (3D Soft Buttons) */
+        .buttons-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+            margin-bottom: 25px;
+        }
+
+        .action-btn {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #fff;
+            padding: 15px 10px;
+            font-size: 1.05rem;
+            font-weight: 800;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+
+        .action-btn:hover {
+            background: var(--rose-pink);
+            color: white;
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 8px 25px var(--btn-shadow);
+            border-color: transparent;
+        }
+
+        /* زر الاعتذار الحزين المليء بالمشاعر */
+        .btn-sorry {
+            grid-column: span 2;
+            background: linear-gradient(90deg, #c9184a 0%, #ff4d6d 100%);
+            border: none;
+            color: white;
+            font-size: 1.15rem;
+            box-shadow: 0 5px 15px rgba(201, 24, 74, 0.3);
+        }
+        .btn-sorry:hover {
+            background: linear-gradient(90deg, #a4133c 0%, #c9184a 100%);
+            box-shadow: 0 10px 30px rgba(201, 24, 74, 0.5);
+        }
+
+        /* صندوق عرض الرسائل الجديد المكتوب بالحبر اليدوي الرومانسية */
+        .display-box {
+            background: var(--paper-color);
+            color: var(--ink-color);
+            border-radius: 24px;
+            padding: 25px;
+            min-height: 140px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            line-height: 1.8;
+            text-align: center;
+            transform: rotate(1deg);
+            border: 1px solid rgba(0,0,0,0.05);
+            font-family: 'Reem_Kufi', sans-serif; /* خط عربي دافئ ورائع للرسائل الكبيرة */
+        }
+
+        /* أنيميشن تساقط عناصر الحب والبهجة المتطورة */
+        .falling-item {
+            position: fixed;
+            top: -50px;
+            z-index: 999;
+            pointer-events: none;
+            animation: fall linear forwards;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0) rotate(0deg) scale(0.5);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(105vh) rotate(360deg) scale(1.2);
+                opacity: 0;
+            }
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: var(--accent-gold);
+            opacity: 0.8;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
 <body>
 
-    <header>
-        <h1>Bienvenue sur mon site ! 👋</h1>
-        <p>Ceci est l'en-tête de la page.</p>
-    </header>
-
-    <main>
-        <h2>À propos de ce site</h2>
-        <p>
-            Ce site est un exemple **minimal** de structure HTML. Il utilise les balises de base : 
-            `<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`, `<header>`, `<h1>`, `<main>`, `<h2>`, et `<p>`.
-        </p>
-        <p>
-            Pour le rendre plus intéressant, vous auriez besoin d'ajouter du **CSS** (pour le style) 
-            et peut-être du **JavaScript** (pour l'interactivité).
-        </p>
+    <div class="container">
+        <!-- زينة المكان الجميل علوياً -->
+        <div style="font-size: 3.8rem; margin-bottom: 5px; filter: drop-shadow(0 0 10px rgba(255,213,102,0.4));">🕯️✨🌸</div>
+        <h1>Happy Birthday Benti ❤️</h1>
         
-        <p>
-            <a href="https://www.google.com" target="_blank">Visitez Google</a>
-        </p>
-    </main>
+        <!-- شارات العمر ومدة العلاقة الفخمة -->
+        <div class="badge-box">
+           
+        </div>
 
-    <footer>
-        <p>&copy; 2025 Mon Site Simple. Tous droits réservés.</p>
-    </footer>
+        <!-- النص الرئيسي: ورقة الحبر الثابتة والأولى -->
+        <div class="main-wish">
+            bonne anniverasire benti kol 3am o nti bkhir la39oba l 100 sna nchlh raby ykhalik liya o raby ykhalina l ba3dana grv nhbk o grv tw7chtk o grv khasitini lyoma l'anniverssaire ta3K rani nchof fik tkbri 9dam 3iniya nchfalk ki konti sghira o bditi tkbri raby yhfdk nchlh je t'aime benti.. ❤️👑💋🙈✍️
+        </div>
 
+        <!-- شبكة الأزرار بالحلة التفاعلية الجديدة كلياً -->
+        <div class="buttons-grid">
+            <button class="action-btn" onclick="showMessage('BENTI 👧🏻❤️', 'nti benti sghira li nmout 3liha o li dima f 9albi.. rabi ya7fhdk o dima t9o3di benti l ghalia li ma nbedalha b walo f donya 🥺💋 🫂❤️🫂❤️')">Benti 👧🏻</button>
+            
+            <button class="action-btn" onclick="showMessage('Ba9arati 🐮💕', 'b9arati l3ziza l mahbola .. 7ta o nti za3fana o mabola tb9ay nti hiya zela FI 3iniya o f 3iniya machi ghir bgra hhh nmout 3lik ya l bagra ta3i 🐮❤️💋🫂 🐮🐮')">Ba9arati 🐮</button>
+            
+            <button class="action-btn" onclick="showMessage('7lali 💍✨', 'omri o marti o mamat wladi nchlh.. 2 ans o nes m3ak fatou ajmel 3wam f 7yati, rabi yjma3na f l7lel o t9o3di m3aya l akhir yom f 3omri ya lmongola dyali 💍❤️👑💋🫂💑💍')"> 7lali 💍</button>
+            
+            <button class="action-btn" onclick="showMessage('9albi 💕🔥', 'lokan jat b yadiya nahdik 3iniya o 3omri kamel nmdhollak .. nti machi ghir 7bibti nti l hwa li ntnfso o bla bik donya dlam f dlam.. nhbk grvvv benti ❤️💋🫂🔥❤️💋🫂')"> 9albi 💖</button>
+            
+            <button class="action-btn" onclick="spawnRoses()"> Wardati 🌹</button>
+            <button class="action-btn" onclick="spawnAllEffects()"> 7yati 😭❤️</button>
+            
+            <!-- زر الاعتذار الصادق والوعد القوي -->
+            <button class="action-btn btn-sorry" onclick="showMessage('Dzl Men 9albi benti 💔😔', 'samhili benti 3la l gholta ta3 lbarh.. l Compte 2em  taghla9 définitif o ma 3ando 7ta m3na b nsba liya o manzidch n3awed had la3fayes o ana rajel 3and kalmti ghlta fatt manzidch n3aweda.. rani grv za3fan 3la ro7i li bkitk o f nhar l\'anniversaire ta3ek.. khodi wa9tek kamel bch trépondi lmohem t3orfi bli rani grv ndaman o machi had l3lā9a nfdiha o nmout 3lajalha o ma nfrtch f 3amin o nes 3la jal ghalta fatet.. je t\'aime benti o nchlh tsmhili o manzdich n3awed had la3fays wa3d mni 😔💔😭🫂❤️🔒')"> Dzl mn 9albi benti 💔</button>
+        </div>
+
+        <!-- صندوق عرض الكلام التفاعلي المكتوب بخط اليد الرائع -->
+        <div class="display-box" id="output-box">
+            3abezi 3la les bouton lfo9aniyin bch tchofi wech kayen f 9albi benti ... ✨👋❤️📜
+        </div>
+
+        <footer>
+         اميرتي👑
+        </footer>
+    </div>
+
+    <script>
+        function showMessage(title, text) {
+            const box = document.getElementById('output-box');
+            box.style.opacity = 0;
+            
+            setTimeout(() => {
+                box.innerHTML = `<div><strong style="color:var(--ink-color); display:block; margin-bottom:10px; font-size:1.3rem; border-bottom:1px dashed rgba(0,0,0,0.1); padding-bottom:5px;">${title}</strong>${text}</div>`;
+                box.style.opacity = 1;
+            }, 150);
+
+            // تفعيل تساقط العناصر بناء على المحتوى المختار
+            if(title.includes('BENTI') || title.includes('9albi')) {
+                spawnItems('🫂', 15);
+                spawnItems('💋', 15);
+                spawnItems('❤️', 10);
+            } else if(title.includes('Ba9arati')) {
+                spawnItems('🐮', 15);
+                spawnItems('💞', 15);
+                spawnItems('🫂', 10);
+            } else if(title.includes('Dzl')) {
+                spawnItems('💔', 15);
+                spawnItems('🫂', 15);
+                spawnItems('😭', 10);
+            } else {
+                spawnItems('💋', 15);
+                spawnItems('💍', 10);
+            }
+        }
+
+        function spawnRoses() {
+            document.getElementById('output-box').innerHTML = "Kol 3am o nti l warda li tziyenli 7yati! 🌹💋🫂❤️";
+            spawnItems('🌹', 45);
+        }
+
+        // مفاجأة التفاعل الخارق والضخم (أحضان وبقر وورود وقبلات معاً)
+        function spawnAllEffects() {
+            document.getElementById('output-box').innerHTML = "Nmout 3lik benti.. rani hna n3an9ak o l3omr kamel nkemloh m3a b3dana nchlh! 😭🫂🐮💋🌹❤️";
+            spawnItems('🫂', 20); // أحضان
+            spawnItems('🐮', 15); // الأبقار اللطيفة
+            spawnItems('💋', 15); // قبلات
+            spawnItems('🌹', 15); // ورود
+            spawnItems('❤️', 15); // قلوب
+        }
+
+        function spawnItems(emoji, count) {
+            for (let i = 0; i < count; i++) {
+                const item = document.createElement('div');
+                item.classList.add('falling-item');
+                item.innerHTML = emoji;
+                
+                item.style.left = Math.random() * 100 + 'vw';
+                item.style.fontSize = Math.random() * 25 + 22 + 'px'; // حجم أكبر وأوضح
+                item.style.animationDuration = Math.random() * 2 + 2.5 + 's'; // نزول سلس وحقيقي
+                item.style.animationDelay = Math.random() * 0.6 + 's';
+                
+                document.body.appendChild(item);
+                
+                setTimeout(() => {
+                    item.remove();
+                }, 5000);
+            }
+        }
+    </script>
 </body>
 </html>
