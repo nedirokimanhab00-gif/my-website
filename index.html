@@ -1,335 +1,3007 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bonne Anniversaire My Everything ❤️</title>
-    <!-- استيراد خطوط مميزة جداً تحاكي الكتابة اليدوية والحبر والإحساس الدافئ -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Reem_Kufi:wght@500;700&family=Tajawal:wght@500;800;900&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            /* ألوان مكان دافئ وجميل (خلفية الشفق والشموع) */
-            --bg-cozy: linear-gradient(180deg, #1a1c29 0%, #2c1a24 50%, #482030 100%);
-            --paper-color: #fbf5e6; /* ورق قديم مكتوب بالحبر */
-            --ink-color: #2b181d;   /* لون الحبر الداكن */
-            --accent-gold: #ffd166;
-            --rose-pink: #ff758f;
-            --btn-shadow: rgba(255, 117, 143, 0.2);
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+<title>نظامي الشخصي</title>
 
-        body {
-            background: var(--bg-cozy);
-            color: #fff;
-            text-align: center;
-            padding: 15px;
-            min-height: 100vh;
-            overflow-x: hidden;
-            font-family: 'Tajawal', sans-serif;
-            position: relative;
-        }
+<style>
+:root{
+    --bg:#0b0f14;
+    --card:#121820;
+    --card2:#171f29;
+    --border:#26313d;
+    --text:#f4f7fa;
+    --muted:#8d9aaa;
+    --blue:#3b82f6;
+    --green:#22c55e;
+    --orange:#f59e0b;
+    --red:#ef4444;
+    --purple:#a78bfa;
+}
 
-        /* تأثير النجوم المتلألئة في المكان الجميل */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background-image: radial-gradient(#ffffff 1px, transparent 1px), radial-gradient(#ffffff 1px, transparent 1px);
-            background-size: 40px 40px;
-            background-position: 0 0, 20px 20px;
-            opacity: 0.15;
-            z-index: 0;
-            animation: twinkle 4s infinite linear;
-        }
+*{
+    box-sizing:border-box;
+}
 
-        @keyframes twinkle {
-            0% { opacity: 0.15; }
-            50% { opacity: 0.3; }
-            100% { opacity: 0.15; }
-        }
+body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:Tahoma,Arial,sans-serif;
+}
 
-        .container {
-            max-width: 480px;
-            margin: 20px auto;
-            position: relative;
-            z-index: 10;
-        }
+.container{
+    width:min(1450px,94%);
+    margin:auto;
+}
 
-        /* شارات دافئة عصرية */
-        .badge-box {
-            margin-bottom: 20px;
-        }
-        .stats-badge {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.12);
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
-            color: var(--accent-gold);
-            padding: 8px 18px;
-            border-radius: 25px;
-            font-size: 0.95rem;
-            font-weight: 800;
-            margin: 5px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            direction: rtl;
-        }
+header{
+    padding:30px 0 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
 
-        h1 {
-            font-family: 'Caveat', cursive;
-            color: #fff;
-            font-size: 2.8rem;
-            text-shadow: 0 0 15px rgba(255,117,143,0.6);
-            margin-bottom: 15px;
-            letter-spacing: 1px;
-        }
+.logo h1{
+    margin:0;
+    font-size:30px;
+}
 
-        /* سيكشن التهنئة الرئيسية: ستايل ورق الحبر الحقيقي */
-        .main-wish {
-            background: var(--paper-color);
-            color: var(--ink-color);
-            padding: 25px;
-            border-radius: 24px;
-            margin-bottom: 25px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.4), inset 0 0 20px rgba(0,0,0,0.05);
-            text-align: left;
-            line-height: 1.8;
-            font-size: 1.15rem;
-            font-weight: 700;
-            border-left: 6px solid var(--rose-pink);
-            direction: ltr;
-            transform: rotate(-1deg); /* جعلها تبدو كورقة ملقاة على طاولة */
-            position: relative;
-        }
-        
-        /* إضافة فتحة دبوس أو شريط لاصق جمالي فوق الورقة */
-        .main-wish::before {
-            content: "📌";
-            position: absolute;
-            top: -12px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 1.5rem;
-        }
+.logo p{
+    color:var(--muted);
+    margin:8px 0 0;
+}
 
-        /* أزرار بحلة جديدة تفاعلية بالكامل (3D Soft Buttons) */
-        .buttons-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 14px;
-            margin-bottom: 25px;
-        }
+.date{
+    background:var(--card);
+    border:1px solid var(--border);
+    padding:12px 18px;
+    border-radius:12px;
+}
 
-        .action-btn {
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            color: #fff;
-            padding: 15px 10px;
-            font-size: 1.05rem;
-            font-weight: 800;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
-        }
+.tabs{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+}
 
-        .action-btn:hover {
-            background: var(--rose-pink);
-            color: white;
-            transform: translateY(-4px) scale(1.03);
-            box-shadow: 0 8px 25px var(--btn-shadow);
-            border-color: transparent;
-        }
+.tab{
+    background:var(--card);
+    border:1px solid var(--border);
+    color:var(--text);
+    padding:12px 22px;
+    border-radius:10px;
+    cursor:pointer;
+    font-family:inherit;
+    font-size:14px;
+}
 
-        /* زر الاعتذار الحزين المليء بالمشاعر */
-        .btn-sorry {
-            grid-column: span 2;
-            background: linear-gradient(90deg, #c9184a 0%, #ff4d6d 100%);
-            border: none;
-            color: white;
-            font-size: 1.15rem;
-            box-shadow: 0 5px 15px rgba(201, 24, 74, 0.3);
-        }
-        .btn-sorry:hover {
-            background: linear-gradient(90deg, #a4133c 0%, #c9184a 100%);
-            box-shadow: 0 10px 30px rgba(201, 24, 74, 0.5);
-        }
+.tab.active{
+    background:var(--blue);
+    border-color:var(--blue);
+}
 
-        /* صندوق عرض الرسائل الجديد المكتوب بالحبر اليدوي الرومانسية */
-        .display-box {
-            background: var(--paper-color);
-            color: var(--ink-color);
-            border-radius: 24px;
-            padding: 25px;
-            min-height: 140px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-top: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-            line-height: 1.8;
-            text-align: center;
-            transform: rotate(1deg);
-            border: 1px solid rgba(0,0,0,0.05);
-            font-family: 'Reem_Kufi', sans-serif; /* خط عربي دافئ ورائع للرسائل الكبيرة */
-        }
+.view{
+    display:none;
+}
 
-        /* أنيميشن تساقط عناصر الحب والبهجة المتطورة */
-        .falling-item {
-            position: fixed;
-            top: -50px;
-            z-index: 999;
-            pointer-events: none;
-            animation: fall linear forwards;
-        }
+.view.active{
+    display:block;
+}
 
-        @keyframes fall {
-            0% {
-                transform: translateY(0) rotate(0deg) scale(0.5);
-                opacity: 0;
-            }
-            10% {
-                opacity: 1;
-            }
-            90% {
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(105vh) rotate(360deg) scale(1.2);
-                opacity: 0;
-            }
-        }
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin-bottom:20px;
+}
 
-        footer {
-            margin-top: 30px;
-            font-size: 0.9rem;
-            color: var(--accent-gold);
-            opacity: 0.8;
-            font-weight: bold;
-            letter-spacing: 0.5px;
-        }
-    </style>
+.stat{
+    background:var(--card);
+    border:1px solid var(--border);
+    padding:20px;
+    border-radius:15px;
+}
+
+.stat-title{
+    color:var(--muted);
+    font-size:14px;
+}
+
+.stat-value{
+    font-size:30px;
+    font-weight:bold;
+    margin-top:8px;
+}
+
+.progress{
+    height:7px;
+    background:#26313d;
+    border-radius:20px;
+    overflow:hidden;
+    margin-top:12px;
+}
+
+.progress span{
+    display:block;
+    height:100%;
+    width:0;
+    background:var(--blue);
+    transition:.3s;
+}
+
+.week-grid{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    gap:10px;
+}
+
+.day{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:14px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+}
+
+.day-head{
+    padding:15px 10px;
+    background:var(--card2);
+    text-align:center;
+}
+
+.day-head strong{
+    display:block;
+}
+
+.day-head small{
+    color:var(--muted);
+}
+
+.task-list{
+    padding:10px;
+    flex:1;
+}
+
+.task{
+    display:flex;
+    align-items:flex-start;
+    gap:8px;
+    padding:10px 5px;
+    border-bottom:1px solid var(--border);
+    font-size:13px;
+}
+
+.task:last-child{
+    border-bottom:0;
+}
+
+.task input[type="checkbox"]{
+    accent-color:var(--blue);
+    width:16px;
+    height:16px;
+    margin-top:3px;
+    flex-shrink:0;
+}
+
+.task.done label{
+    color:#687482;
+    text-decoration:line-through;
+}
+
+.task label{
+    flex:1;
+}
+
+.category{
+    display:inline-block;
+    font-size:10px;
+    padding:3px 6px;
+    border-radius:5px;
+    background:#26313d;
+    color:#aeb9c5;
+    margin-top:4px;
+}
+
+.category.custom{
+    background:#3b2e4d;
+    color:#c9b6f5;
+}
+
+.task-del{
+    background:none;
+    border:0;
+    color:var(--red);
+    cursor:pointer;
+    font-size:14px;
+    padding:0 2px;
+    flex-shrink:0;
+}
+
+.custom-add{
+    display:flex;
+    gap:6px;
+    padding:8px 10px;
+    border-top:1px dashed var(--border);
+}
+
+.custom-add input{
+    flex:1;
+    min-width:0;
+    background:#0d1319;
+    color:var(--text);
+    border:1px solid var(--border);
+    border-radius:6px;
+    padding:6px 8px;
+    font-size:12px;
+}
+
+.custom-add button{
+    background:var(--card2);
+    border:1px solid var(--border);
+    color:var(--text);
+    border-radius:6px;
+    padding:6px 10px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.day-note{
+    padding:8px 10px;
+    border-top:1px solid var(--border);
+}
+
+.day-note textarea{
+    width:100%;
+    resize:vertical;
+    min-height:44px;
+    background:#0d1319;
+    color:var(--text);
+    border:1px solid var(--border);
+    border-radius:6px;
+    padding:6px 8px;
+    font-size:12px;
+    font-family:inherit;
+}
+
+.day-note label{
+    font-size:11px;
+    color:var(--muted);
+    display:block;
+    margin-bottom:4px;
+}
+
+.section{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:15px;
+    padding:20px;
+    margin-top:20px;
+}
+
+.section h2{
+    margin-top:0;
+}
+
+.goals{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+
+.goal{
+    background:var(--card2);
+    border:1px solid var(--border);
+    padding:15px;
+    border-radius:10px;
+}
+
+.goal b{
+    display:block;
+    margin-bottom:5px;
+}
+
+.goal span{
+    color:var(--muted);
+    font-size:13px;
+}
+
+/* التنبيهات */
+
+.notification-status{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+    background:var(--card2);
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.status-text{
+    color:var(--muted);
+}
+
+.status-ok{
+    color:var(--green);
+}
+
+.status-off{
+    color:var(--orange);
+}
+
+.reminder-list{
+    display:grid;
+    gap:10px;
+}
+
+.reminder{
+    display:grid;
+    grid-template-columns:1fr 120px 90px;
+    align-items:center;
+    gap:10px;
+    background:#10161d;
+    border:1px solid var(--border);
+    padding:14px;
+    border-radius:10px;
+}
+
+.reminder-name{
+    font-weight:bold;
+}
+
+.reminder-name small{
+    display:block;
+    color:var(--muted);
+    margin-top:4px;
+}
+
+.time-input{
+    width:100%;
+    background:#0b0f14;
+    color:white;
+    border:1px solid var(--border);
+    border-radius:7px;
+    padding:9px;
+}
+
+.switch{
+    display:flex;
+    align-items:center;
+    gap:7px;
+    color:var(--muted);
+    font-size:13px;
+}
+
+.switch input{
+    width:18px;
+    height:18px;
+    accent-color:var(--blue);
+}
+
+.button-row{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.control{
+    background:var(--card2);
+    color:white;
+    border:1px solid var(--border);
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+    font-family:inherit;
+    font-size:14px;
+}
+
+.control:hover{
+    border-color:var(--blue);
+}
+
+.primary{
+    background:var(--blue);
+    border-color:var(--blue);
+}
+
+.emergency{
+    display:flex;
+    gap:10px;
+}
+
+.emergency input{
+    flex:1;
+    background:#0d1319;
+    color:white;
+    border:1px solid var(--border);
+    padding:12px;
+    border-radius:9px;
+}
+
+.add{
+    background:var(--blue);
+    color:white;
+    border:0;
+    padding:12px 18px;
+    border-radius:9px;
+    cursor:pointer;
+}
+
+.emergency-item{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    padding:12px;
+    border-bottom:1px solid var(--border);
+}
+
+.delete{
+    background:none;
+    color:var(--red);
+    border:0;
+    cursor:pointer;
+}
+
+.month-box{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:15px;
+    padding:20px;
+    overflow-x:auto;
+}
+
+.month-controls{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:15px;
+    gap:10px;
+}
+
+.month-grid{
+    min-width:850px;
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    gap:6px;
+}
+
+.week-name{
+    text-align:center;
+    color:var(--muted);
+    padding:8px;
+}
+
+.calendar-day{
+    min-height:105px;
+    background:#10161d;
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:8px;
+    cursor:pointer;
+}
+
+.calendar-day:hover{
+    border-color:var(--blue);
+}
+
+.calendar-day.today{
+    border:2px solid var(--blue);
+}
+
+.calendar-day-number{
+    font-weight:bold;
+    margin-bottom:8px;
+}
+
+.dot{
+    display:inline-block;
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:var(--green);
+}
+
+/* الإحصائيات */
+
+.stat-cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.streak-box{
+    text-align:center;
+}
+
+.streak-value{
+    font-size:38px;
+    font-weight:bold;
+    color:var(--orange);
+}
+
+.chart-row{
+    display:flex;
+    align-items:flex-end;
+    gap:10px;
+    height:180px;
+    padding:10px 5px 0;
+}
+
+.chart-col{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-end;
+    height:100%;
+}
+
+.chart-bar{
+    width:60%;
+    background:var(--blue);
+    border-radius:6px 6px 0 0;
+    transition:.3s;
+    min-height:2px;
+}
+
+.chart-label{
+    margin-top:8px;
+    font-size:12px;
+    color:var(--muted);
+    text-align:center;
+}
+
+.chart-pct{
+    font-size:11px;
+    color:var(--text);
+    margin-bottom:4px;
+}
+
+.cat-bars{
+    display:grid;
+    gap:12px;
+}
+
+.cat-bar-row{
+    display:grid;
+    grid-template-columns:110px 1fr 50px;
+    align-items:center;
+    gap:10px;
+    font-size:13px;
+}
+
+.cat-bar-track{
+    height:12px;
+    background:#26313d;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.cat-bar-fill{
+    height:100%;
+    background:var(--purple);
+}
+
+/* النسخ الاحتياطي */
+
+.backup-row{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
+.file-label{
+    background:var(--card2);
+    border:1px solid var(--border);
+    color:var(--text);
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.file-label:hover{
+    border-color:var(--blue);
+}
+
+footer{
+    text-align:center;
+    color:var(--muted);
+    padding:30px 0;
+    font-size:13px;
+}
+
+/* نافذة التنبيه */
+
+.alert-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    z-index:9999;
+    padding:20px;
+}
+
+.alert-overlay.show{
+    display:flex;
+}
+
+.alert-box{
+    width:min(500px,100%);
+    background:var(--card);
+    border:1px solid var(--blue);
+    border-radius:18px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 20px 70px rgba(0,0,0,.5);
+    max-height:85vh;
+    overflow-y:auto;
+}
+
+.alert-icon{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.alert-box h2{
+    margin:10px 0;
+}
+
+.alert-box p{
+    color:var(--muted);
+    line-height:1.8;
+}
+
+.alert-box button{
+    margin-top:15px;
+    background:var(--blue);
+    color:white;
+    border:0;
+    padding:12px 25px;
+    border-radius:9px;
+    cursor:pointer;
+}
+
+.day-detail-list{
+    text-align:right;
+    margin-top:15px;
+}
+
+.day-detail-group{
+    margin-bottom:12px;
+}
+
+.day-detail-group b{
+    display:block;
+    margin-bottom:6px;
+    color:var(--text);
+}
+
+.day-detail-item{
+    font-size:13px;
+    color:var(--muted);
+    padding:3px 0;
+}
+
+.day-detail-item.done{
+    color:var(--green);
+}
+
+@media(max-width:1050px){
+
+    .week-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+    .stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .stat-cards{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:700px){
+
+    .week-grid{
+        grid-template-columns:1fr;
+    }
+
+    .stats{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .goals{
+        grid-template-columns:1fr;
+    }
+
+    .reminder{
+        grid-template-columns:1fr;
+    }
+
+    .emergency{
+        flex-direction:column;
+    }
+
+    .cat-bar-row{
+        grid-template-columns:90px 1fr 40px;
+    }
+
+}
+</style>
 </head>
+
 <body>
 
-    <div class="container">
-        <!-- زينة المكان الجميل علوياً -->
-        <div style="font-size: 3.8rem; margin-bottom: 5px; filter: drop-shadow(0 0 10px rgba(255,213,102,0.4));">🕯️✨🌸</div>
-        <h1>Happy Birthday Benti ❤️</h1>
-        
-        <!-- شارات العمر ومدة العلاقة الفخمة -->
-        <div class="badge-box">
-           
-        </div>
+<div class="container">
 
-        <!-- النص الرئيسي: ورقة الحبر الثابتة والأولى -->
-        <div class="main-wish">
-            bonne anniverasire benti kol 3am o nti bkhir la39oba l 100 sna nchlh raby ykhalik liya o raby ykhalina l ba3dana grv nhbk o grv tw7chtk o grv khasitini lyoma l'anniverssaire ta3K rani nchof fik tkbri 9dam 3iniya nchfalk ki konti sghira o bditi tkbri raby yhfdk nchlh je t'aime benti.. ❤️👑💋🙈✍️
-        </div>
+<header>
 
-        <!-- شبكة الأزرار بالحلة التفاعلية الجديدة كلياً -->
-        <div class="buttons-grid">
-            <button class="action-btn" onclick="showMessage('BENTI 👧🏻❤️', 'nti benti sghira li nmout 3liha o li dima f 9albi.. rabi ya7fhdk o dima t9o3di benti l ghalia li ma nbedalha b walo f donya 🥺💋 🫂❤️🫂❤️')">Benti 👧🏻</button>
-            
-            <button class="action-btn" onclick="showMessage('Ba9arati 🐮💕', 'b9arati l3ziza l mahbola .. 7ta o nti za3fana o mabola tb9ay nti hiya zela FI 3iniya o f 3iniya machi ghir bgra hhh nmout 3lik ya l bagra ta3i 🐮❤️💋🫂 🐮🐮')">Ba9arati 🐮</button>
-            
-            <button class="action-btn" onclick="showMessage('7lali 💍✨', 'omri o marti o mamat wladi nchlh.. 2 ans o nes m3ak fatou ajmel 3wam f 7yati, rabi yjma3na f l7lel o t9o3di m3aya l akhir yom f 3omri ya lmongola dyali 💍❤️👑💋🫂💑💍')"> 7lali 💍</button>
-            
-            <button class="action-btn" onclick="showMessage('9albi 💕🔥', 'lokan jat b yadiya nahdik 3iniya o 3omri kamel nmdhollak .. nti machi ghir 7bibti nti l hwa li ntnfso o bla bik donya dlam f dlam.. nhbk grvvv benti ❤️💋🫂🔥❤️💋🫂')"> 9albi 💖</button>
-            
-            <button class="action-btn" onclick="spawnRoses()"> Wardati 🌹</button>
-            <button class="action-btn" onclick="spawnAllEffects()"> 7yati 😭❤️</button>
-            
-            <!-- زر الاعتذار الصادق والوعد القوي -->
-            <button class="action-btn btn-sorry" onclick="showMessage('Dzl Men 9albi benti 💔😔', 'samhili benti 3la l gholta ta3 lbarh.. l Compte 2em  taghla9 définitif o ma 3ando 7ta m3na b nsba liya o manzidch n3awed had la3fayes o ana rajel 3and kalmti ghlta fatt manzidch n3aweda.. rani grv za3fan 3la ro7i li bkitk o f nhar l\'anniversaire ta3ek.. khodi wa9tek kamel bch trépondi lmohem t3orfi bli rani grv ndaman o  had l3la9a nfdiha o nmout 3lajalha o ma nfrtch f 3amin o nes 3la jal ghalta fatet.. je t\'aime benti o nchlh tsmhili o manzdich n3awed had la3fays wa3d mni 😔💔😭🫂❤️🔒')"> Dzl mn 9albi benti 💔</button>
-        </div>
-
-        <!-- صندوق عرض الكلام التفاعلي المكتوب بخط اليد الرائع -->
-        <div class="display-box" id="output-box">
-            3abezi 3la les bouton lfo9aniyin bch tchofi wech kayen f 9albi benti ... ✨👋❤️📜
-        </div>
-
-        <footer>
-         اميرتي👑
-        </footer>
+    <div class="logo">
+        <h1>نظامي الشخصي</h1>
+        <p>الصلاة • الدخل • البراند • TOJARIX • التعلم • الرياضة • الحياة</p>
     </div>
 
-    <script>
-        function showMessage(title, text) {
-            const box = document.getElementById('output-box');
-            box.style.opacity = 0;
-            
-            setTimeout(() => {
-                box.innerHTML = `<div><strong style="color:var(--ink-color); display:block; margin-bottom:10px; font-size:1.3rem; border-bottom:1px dashed rgba(0,0,0,0.1); padding-bottom:5px;">${title}</strong>${text}</div>`;
-                box.style.opacity = 1;
-            }, 150);
+    <div class="date" id="currentDate"></div>
 
-            // تفعيل تساقط العناصر بناء على المحتوى المختار
-            if(title.includes('BENTI') || title.includes('9albi')) {
-                spawnItems('🫂', 15);
-                spawnItems('💋', 15);
-                spawnItems('❤️', 10);
-            } else if(title.includes('Ba9arati')) {
-                spawnItems('🐮', 15);
-                spawnItems('💞', 15);
-                spawnItems('🫂', 10);
-            } else if(title.includes('Dzl')) {
-                spawnItems('💔', 15);
-                spawnItems('🫂', 15);
-                spawnItems('😭', 10);
-            } else {
-                spawnItems('💋', 15);
-                spawnItems('💍', 10);
+</header>
+
+
+<div class="tabs">
+
+    <button class="tab active" data-view="week">
+        📅 الأسبوع
+    </button>
+
+    <button class="tab" data-view="month">
+        🗓️ الشهر
+    </button>
+
+    <button class="tab" data-view="stats">
+        📊 الإحصائيات
+    </button>
+
+    <button class="tab" data-view="reminders">
+        🔔 التنبيهات
+    </button>
+
+    <button class="tab" data-view="backup">
+        💾 النسخ الاحتياطي
+    </button>
+
+</div>
+
+
+<!-- الإحصائيات العامة -->
+
+<div class="stats">
+
+    <div class="stat">
+        <div class="stat-title">إنجاز اليوم</div>
+        <div class="stat-value" id="todayPercent">0%</div>
+
+        <div class="progress">
+            <span id="todayProgress"></span>
+        </div>
+    </div>
+
+    <div class="stat">
+        <div class="stat-title">إنجاز الأسبوع</div>
+        <div class="stat-value" id="weekPercent">0%</div>
+
+        <div class="progress">
+            <span id="weekProgress"></span>
+        </div>
+    </div>
+
+    <div class="stat">
+        <div class="stat-title">المهام المكتملة</div>
+        <div class="stat-value" id="completedTasks">0</div>
+    </div>
+
+    <div class="stat">
+        <div class="stat-title">أيام الرياضة</div>
+        <div class="stat-value" id="sportDays">0 / 3</div>
+    </div>
+
+</div>
+
+
+<!-- الأسبوع -->
+
+<section class="view active" id="week">
+
+    <div class="week-grid" id="weekGrid"></div>
+
+
+    <div class="section">
+
+        <h2>🎯 أهدافي الأساسية</h2>
+
+        <div class="goals">
+
+            <div class="goal">
+                <b>💰 الدخل</b>
+                <span>
+                    Freelance + البحث عن العملاء + تنفيذ المشاريع المدفوعة.
+                </span>
+            </div>
+
+            <div class="goal">
+                <b>👕 البراند</b>
+                <span>
+                    الموقع + التصاميم + التسويق + محاولة بيع التيشيرتات.
+                </span>
+            </div>
+
+            <div class="goal">
+                <b>💻 TOJARIX</b>
+                <span>
+                    التواصل مع أصحاب المحلات ومحاولة الحصول على أول زبون.
+                </span>
+            </div>
+
+            <div class="goal">
+                <b>📚 التعلم</b>
+                <span>
+                    تعلم مهارة واحدة مفيدة للعمل.
+                </span>
+            </div>
+
+            <div class="goal">
+                <b>🏋️ الجسم</b>
+                <span>
+                    رياضة 3 مرات أسبوعيًا + مشي.
+                </span>
+            </div>
+
+            <div class="goal">
+                <b>🧠 الحياة</b>
+                <span>
+                    الصلاة + النوم + العائلة + الأصدقاء + الملعب.
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- الطوارئ -->
+
+    <div class="section">
+
+        <h2>🚨 الأعمال الطارئة</h2>
+
+        <div class="emergency">
+
+            <input
+                id="emergencyInput"
+                placeholder="مثال: تعديل عاجل في موقع البراند..."
+            >
+
+            <button class="add" id="addEmergency">
+                + إضافة
+            </button>
+
+        </div>
+
+        <div id="emergencyList"></div>
+
+    </div>
+
+</section>
+
+
+<!-- الشهر -->
+
+<section class="view" id="month">
+
+    <div class="month-box">
+
+        <div class="month-controls">
+
+            <button class="control" id="prevMonth">
+                ← السابق
+            </button>
+
+            <strong id="monthTitle"></strong>
+
+            <button class="control" id="nextMonth">
+                التالي →
+            </button>
+
+        </div>
+
+        <div class="month-grid" id="monthGrid"></div>
+
+    </div>
+
+    <p style="color:var(--muted);margin-top:15px;font-size:13px">
+        اضغط على أي يوم لمشاهدة تفاصيل المهام المنجزة فيه.
+    </p>
+
+</section>
+
+
+<!-- الإحصائيات -->
+
+<section class="view" id="stats">
+
+    <div class="stat-cards">
+
+        <div class="section streak-box" style="margin-top:0">
+            <div class="stat-title">🔥 سلسلة الأيام المتتالية</div>
+            <div class="streak-value" id="streakValue">0</div>
+            <div style="color:var(--muted);font-size:13px;margin-top:5px">
+                يوم بنسبة إنجاز 70% فأكثر
+            </div>
+        </div>
+
+        <div class="section" style="margin-top:0">
+            <div class="stat-title">📈 أفضل يوم هذا الأسبوع</div>
+            <div class="streak-value" id="bestDayValue" style="color:var(--green)">-</div>
+            <div style="color:var(--muted);font-size:13px;margin-top:5px" id="bestDayPercent"></div>
+        </div>
+
+        <div class="section" style="margin-top:0">
+            <div class="stat-title">🏃 متوسط الإنجاز الأسبوعي</div>
+            <div class="streak-value" id="avgWeekValue" style="color:var(--blue)">0%</div>
+            <div style="color:var(--muted);font-size:13px;margin-top:5px">
+                معدل إنجاز كل يوم في الأسبوع الحالي
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section">
+
+        <h2>إنجاز كل يوم في الأسبوع</h2>
+
+        <div class="chart-row" id="weekChart"></div>
+
+    </div>
+
+    <div class="section">
+
+        <h2>الإنجاز حسب الفئة (هذا الأسبوع)</h2>
+
+        <div class="cat-bars" id="categoryBars"></div>
+
+    </div>
+
+</section>
+
+
+<!-- التنبيهات -->
+
+<section class="view" id="reminders">
+
+    <div class="section">
+
+        <h2>🔔 نظام التنبيهات</h2>
+
+        <div class="notification-status">
+
+            <div>
+                <strong>إشعارات المتصفح</strong>
+
+                <div class="status-text" id="notificationStatus">
+                    لم يتم السماح بالإشعارات بعد.
+                </div>
+            </div>
+
+            <button class="control primary" id="enableNotifications">
+                تفعيل الإشعارات
+            </button>
+
+        </div>
+
+
+        <p style="color:var(--muted);line-height:1.8">
+            اختر وقت كل نشاط. عند حلول الوقت سيظهر تنبيه داخل الموقع،
+            وسيحاول المتصفح إرسال إشعار وصوت تنبيه.
+        </p>
+
+
+        <div class="reminder-list" id="reminderList"></div>
+
+
+        <div class="button-row" style="margin-top:20px;justify-content:space-between">
+
+            <div class="button-row">
+
+                <button class="control primary" id="saveReminders">
+                    💾 حفظ أوقات التنبيهات
+                </button>
+
+                <button class="control" id="testNotification">
+                    🔔 تجربة التنبيه
+                </button>
+
+            </div>
+
+            <label class="switch">
+                <input type="checkbox" id="soundToggle" checked>
+                🔊 تشغيل صوت التنبيه
+            </label>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- النسخ الاحتياطي -->
+
+<section class="view" id="backup">
+
+    <div class="section">
+
+        <h2>💾 نسخ احتياطي واستعادة البيانات</h2>
+
+        <p style="color:var(--muted);line-height:1.8">
+            كل بياناتك (المهام، الملاحظات، التنبيهات، الأعمال الطارئة) محفوظة في هذا المتصفح فقط.
+            نزّل نسخة احتياطية بين حين وآخر حتى لا تفقد بياناتك، ويمكنك استعادتها لاحقًا أو على جهاز آخر.
+        </p>
+
+        <div class="backup-row">
+
+            <button class="control primary" id="exportBackup">
+                ⬇️ تنزيل نسخة احتياطية
+            </button>
+
+            <label class="file-label" for="importBackupFile">
+                ⬆️ استيراد نسخة احتياطية
+            </label>
+
+            <input type="file" id="importBackupFile" accept="application/json" style="display:none">
+
+        </div>
+
+        <p style="color:var(--muted);font-size:12px;margin-top:15px">
+            ملاحظة: استيراد نسخة احتياطية سيستبدل البيانات الحالية في هذا المتصفح.
+        </p>
+
+    </div>
+
+</section>
+
+
+<footer>
+    لا تبحث عن يوم مثالي — ابحث عن الاستمرار.
+</footer>
+
+</div>
+
+
+<!-- نافذة التنبيه -->
+
+<div class="alert-overlay" id="alertOverlay">
+
+    <div class="alert-box">
+
+        <div class="alert-icon">⏰</div>
+
+        <h2 id="alertTitle">
+            حان وقت المهمة
+        </h2>
+
+        <p id="alertText"></p>
+
+        <div id="alertExtra"></div>
+
+        <button id="closeAlert">
+            فهمت ✓
+        </button>
+
+    </div>
+
+</div>
+
+
+<script>
+
+/* =========================
+   المهام الأسبوعية
+========================= */
+
+const tasks = [
+
+    {
+        name:"الصلاة",
+        items:[
+            "الفجر",
+            "الظهر",
+            "العصر",
+            "المغرب",
+            "العشاء"
+        ]
+    },
+
+    {
+        name:"الدخل",
+        items:[
+            "Freelance: البحث عن مشاريع وعملاء",
+            "إرسال عروض / التواصل مع عميل محتمل"
+        ]
+    },
+
+    {
+        name:"البراند",
+        items:[
+            "العمل على موقع البراند",
+            "تصميم / تطوير منتج",
+            "محتوى وتسويق للتيشيرتات"
+        ]
+    },
+
+    {
+        name:"TOJARIX",
+        items:[
+            "التواصل مع زبون محتمل",
+            "عرض البرنامج / Demo"
+        ]
+    },
+
+    {
+        name:"التعلم",
+        items:[
+            "تعلم لمدة ساعة"
+        ]
+    },
+
+    {
+        name:"الجسم",
+        items:[
+            "رياضة",
+            "مشي / حركة"
+        ]
+    },
+
+    {
+        name:"الحياة",
+        items:[
+            "وقت مع العائلة / الأصدقاء",
+            "وقت هادئ بدون هاتف"
+        ]
+    },
+
+    {
+        name:"النوم",
+        items:[
+            "النوم في الوقت المحدد"
+        ]
+    }
+
+];
+
+
+const days = [
+    "السبت",
+    "الأحد",
+    "الاثنين",
+    "الثلاثاء",
+    "الأربعاء",
+    "الخميس",
+    "الجمعة"
+];
+
+
+function categoryFor(name){
+
+    const categories = {
+
+        "الصلاة":"دين",
+        "الدخل":"مال",
+        "البراند":"مشروع",
+        "TOJARIX":"مشروع",
+        "التعلم":"تطوير",
+        "الجسم":"صحة",
+        "الحياة":"اجتماعي",
+        "النوم":"راحة"
+
+    };
+
+    return categories[name] || "";
+
+}
+
+
+function formatDate(date){
+
+    return date.getFullYear()+"-"+
+        String(date.getMonth()+1).padStart(2,"0")+"-"+
+        String(date.getDate()).padStart(2,"0");
+
+}
+
+
+const now = new Date();
+
+const todayKey = formatDate(now);
+
+
+function storageKey(date,index){
+
+    return "task-"+date+"-"+index;
+
+}
+
+
+function getWeekDates(baseDate){
+
+    const d = baseDate ? new Date(baseDate) : new Date();
+
+    let day = d.getDay();
+
+    let diff = day === 6 ? 0 : day + 1;
+
+    d.setDate(d.getDate()-diff);
+
+    const dates=[];
+
+    for(let i=0;i<7;i++){
+
+        const x = new Date(d);
+
+        x.setDate(d.getDate()+i);
+
+        dates.push(x);
+
+    }
+
+    return dates;
+
+}
+
+
+/* =========================
+   المهام الإضافية (مخصصة)
+========================= */
+
+function getCustomTasks(date){
+
+    try{
+
+        return JSON.parse(
+            localStorage.getItem("custom-"+date) || "[]"
+        );
+
+    }catch{
+
+        return [];
+
+    }
+
+}
+
+
+function saveCustomTasks(date,list){
+
+    localStorage.setItem(
+        "custom-"+date,
+        JSON.stringify(list)
+    );
+
+}
+
+
+function customKey(date,id){
+
+    return "customtask-"+date+"-"+id;
+
+}
+
+
+function addCustomTask(date,text){
+
+    const list = getCustomTasks(date);
+
+    const id = Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+
+    list.push({id,text});
+
+    saveCustomTasks(date,list);
+
+    renderWeek();
+
+    updateStats();
+
+}
+
+
+function deleteCustomTask(date,id){
+
+    const list =
+        getCustomTasks(date)
+        .filter(t=>t.id!==id);
+
+    saveCustomTasks(date,list);
+
+    localStorage.removeItem(customKey(date,id));
+
+    renderWeek();
+
+    updateStats();
+
+}
+
+
+/* =========================
+   إجمالي مهام يوم معيّن (ثابتة + مخصصة)
+========================= */
+
+function dayTotals(date){
+
+    let total=0;
+    let completed=0;
+
+    let index=0;
+
+    tasks.forEach(group=>{
+
+        group.items.forEach(()=>{
+
+            total++;
+
+            if(localStorage.getItem(storageKey(date,index))==="true"){
+
+                completed++;
+
             }
+
+            index++;
+
+        });
+
+    });
+
+    const custom = getCustomTasks(date);
+
+    custom.forEach(item=>{
+
+        total++;
+
+        if(localStorage.getItem(customKey(date,item.id))==="true"){
+
+            completed++;
+
         }
 
-        function spawnRoses() {
-            document.getElementById('output-box').innerHTML = "Kol 3am o nti l warda li tziyenli 7yati! 🌹💋🫂❤️";
-            spawnItems('🌹', 45);
+    });
+
+    return {total,completed};
+
+}
+
+
+function dayPercent(date){
+
+    const {total,completed} = dayTotals(date);
+
+    return total ? Math.round(completed/total*100) : 0;
+
+}
+
+
+/* =========================
+   رسم الأسبوع
+========================= */
+
+function renderWeek(){
+
+    const grid =
+        document.getElementById("weekGrid");
+
+    grid.innerHTML="";
+
+    const dates=getWeekDates();
+
+    dates.forEach((date,dayIndex)=>{
+
+        const key=formatDate(date);
+
+        const day=document.createElement("div");
+
+        day.className="day";
+
+        day.innerHTML=`
+            <div class="day-head">
+                <strong>${days[dayIndex]}</strong>
+                <small>${date.getDate()}/${date.getMonth()+1}</small>
+            </div>
+
+            <div class="task-list"></div>
+        `;
+
+        const list=day.querySelector(".task-list");
+
+        let index=0;
+
+        tasks.forEach(group=>{
+
+            group.items.forEach(item=>{
+
+                const id=storageKey(key,index);
+
+                const checked=
+                    localStorage.getItem(id)==="true";
+
+                const task=document.createElement("div");
+
+                task.className=
+                    "task"+(checked?" done":"");
+
+                task.innerHTML=`
+                    <input type="checkbox"
+                        ${checked?"checked":""}>
+
+                    <label>
+                        ${item}
+                        <span class="category">
+                            ${categoryFor(group.name)}
+                        </span>
+                    </label>
+                `;
+
+                const checkbox=
+                    task.querySelector("input");
+
+                checkbox.addEventListener("change",()=>{
+
+                    localStorage.setItem(
+                        id,
+                        checkbox.checked
+                    );
+
+                    task.classList.toggle(
+                        "done",
+                        checkbox.checked
+                    );
+
+                    updateStats();
+
+                });
+
+                list.appendChild(task);
+
+                index++;
+
+            });
+
+        });
+
+
+        // المهام المخصصة لهذا اليوم
+
+        const custom = getCustomTasks(key);
+
+        custom.forEach(item=>{
+
+            const id = customKey(key,item.id);
+
+            const checked =
+                localStorage.getItem(id)==="true";
+
+            const task=document.createElement("div");
+
+            task.className="task"+(checked?" done":"");
+
+            task.innerHTML=`
+                <input type="checkbox" ${checked?"checked":""}>
+
+                <label>
+                    ${item.text}
+                    <span class="category custom">مخصصة</span>
+                </label>
+
+                <button class="task-del" title="حذف">✕</button>
+            `;
+
+            task.querySelector("input")
+            .addEventListener("change",e=>{
+
+                localStorage.setItem(id,e.target.checked);
+
+                task.classList.toggle("done",e.target.checked);
+
+                updateStats();
+
+            });
+
+            task.querySelector(".task-del")
+            .addEventListener("click",()=>{
+
+                deleteCustomTask(key,item.id);
+
+            });
+
+            list.appendChild(task);
+
+        });
+
+
+        // إضافة مهمة سريعة
+
+        const addRow=document.createElement("div");
+
+        addRow.className="custom-add";
+
+        addRow.innerHTML=`
+            <input type="text" placeholder="+ مهمة إضافية...">
+            <button title="إضافة">＋</button>
+        `;
+
+        const input = addRow.querySelector("input");
+
+        const btn = addRow.querySelector("button");
+
+        function submitCustom(){
+
+            const val = input.value.trim();
+
+            if(!val)return;
+
+            addCustomTask(key,val);
+
+            input.value="";
+
         }
 
-        // مفاجأة التفاعل الخارق والضخم (أحضان وبقر وورود وقبلات معاً)
-        function spawnAllEffects() {
-            document.getElementById('output-box').innerHTML = "Nmout 3lik benti.. rani hna n3an9ak o l3omr kamel nkemloh m3a b3dana nchlh! 😭🫂🐮💋🌹❤️";
-            spawnItems('🫂', 20); // أحضان
-            spawnItems('🐮', 15); // الأبقار اللطيفة
-            spawnItems('💋', 15); // قبلات
-            spawnItems('🌹', 15); // ورود
-            spawnItems('❤️', 15); // قلوب
-        }
+        btn.addEventListener("click",submitCustom);
 
-        function spawnItems(emoji, count) {
-            for (let i = 0; i < count; i++) {
-                const item = document.createElement('div');
-                item.classList.add('falling-item');
-                item.innerHTML = emoji;
-                
-                item.style.left = Math.random() * 100 + 'vw';
-                item.style.fontSize = Math.random() * 25 + 22 + 'px'; // حجم أكبر وأوضح
-                item.style.animationDuration = Math.random() * 2 + 2.5 + 's'; // نزول سلس وحقيقي
-                item.style.animationDelay = Math.random() * 0.6 + 's';
-                
-                document.body.appendChild(item);
-                
-                setTimeout(() => {
-                    item.remove();
-                }, 5000);
+        input.addEventListener("keydown",e=>{
+
+            if(e.key==="Enter")submitCustom();
+
+        });
+
+        day.appendChild(addRow);
+
+
+        // ملاحظة اليوم
+
+        const noteBox=document.createElement("div");
+
+        noteBox.className="day-note";
+
+        const savedNote = localStorage.getItem("note-"+key) || "";
+
+        noteBox.innerHTML=`
+            <label>📝 ملاحظة اليوم</label>
+            <textarea placeholder="اكتب ملاحظة سريعة...">${savedNote}</textarea>
+        `;
+
+        const textarea = noteBox.querySelector("textarea");
+
+        let noteTimer=null;
+
+        textarea.addEventListener("input",()=>{
+
+            clearTimeout(noteTimer);
+
+            noteTimer=setTimeout(()=>{
+
+                localStorage.setItem("note-"+key,textarea.value);
+
+            },400);
+
+        });
+
+        day.appendChild(noteBox);
+
+
+        grid.appendChild(day);
+
+    });
+
+}
+
+
+/* =========================
+   الإحصائيات
+========================= */
+
+function updateStats(){
+
+    const dates=getWeekDates();
+
+    let total=0;
+    let completed=0;
+
+    dates.forEach(date=>{
+
+        const key=formatDate(date);
+
+        const t = dayTotals(key);
+
+        total += t.total;
+
+        completed += t.completed;
+
+    });
+
+
+    const todayTotals = dayTotals(todayKey);
+
+    const todayPercent =
+        todayTotals.total
+        ? Math.round(todayTotals.completed/todayTotals.total*100)
+        : 0;
+
+    const weekPercent =
+        total ? Math.round(completed/total*100) : 0;
+
+
+    document.getElementById("todayPercent")
+        .textContent=todayPercent+"%";
+
+    document.getElementById("todayProgress")
+        .style.width=todayPercent+"%";
+
+    document.getElementById("weekPercent")
+        .textContent=weekPercent+"%";
+
+    document.getElementById("weekProgress")
+        .style.width=weekPercent+"%";
+
+    document.getElementById("completedTasks")
+        .textContent=completed;
+
+
+    let sportDays=0;
+
+    dates.forEach(date=>{
+
+        const key=formatDate(date);
+
+        let i=0;
+
+        tasks.forEach(group=>{
+
+            group.items.forEach(item=>{
+
+                if(
+                    group.name==="الجسم" &&
+                    item==="رياضة"
+                ){
+
+                    if(
+                        localStorage.getItem(
+                            storageKey(key,i)
+                        )==="true"
+                    ){
+
+                        sportDays++;
+
+                    }
+
+                }
+
+                i++;
+
+            });
+
+        });
+
+    });
+
+
+    document.getElementById("sportDays")
+        .textContent=sportDays+" / 3";
+
+
+    renderStatsTab(dates);
+
+}
+
+
+/* =========================
+   تبويب الإحصائيات
+========================= */
+
+function renderStatsTab(dates){
+
+    // رسم بياني لكل يوم في الأسبوع
+
+    const chart = document.getElementById("weekChart");
+
+    if(chart){
+
+        chart.innerHTML="";
+
+        let bestDay=null;
+        let bestPct=-1;
+        let sumPct=0;
+
+        dates.forEach((date,i)=>{
+
+            const key=formatDate(date);
+
+            const pct = dayPercent(key);
+
+            sumPct += pct;
+
+            if(pct>bestPct){
+
+                bestPct=pct;
+
+                bestDay=days[i];
+
             }
+
+            const col=document.createElement("div");
+
+            col.className="chart-col";
+
+            col.innerHTML=`
+                <div class="chart-pct">${pct}%</div>
+                <div class="chart-bar" style="height:${Math.max(pct,2)}%"></div>
+                <div class="chart-label">${days[i]}</div>
+            `;
+
+            chart.appendChild(col);
+
+        });
+
+
+        const bestDayEl = document.getElementById("bestDayValue");
+
+        const bestDayPctEl = document.getElementById("bestDayPercent");
+
+        if(bestDayEl){
+
+            bestDayEl.textContent = bestPct>0 ? bestDay : "-";
+
         }
-    </script>
+
+        if(bestDayPctEl){
+
+            bestDayPctEl.textContent =
+                bestPct>0 ? bestPct+"% إنجاز" : "لا توجد بيانات بعد";
+
+        }
+
+
+        const avgEl = document.getElementById("avgWeekValue");
+
+        if(avgEl){
+
+            avgEl.textContent =
+                Math.round(sumPct/dates.length)+"%";
+
+        }
+
+    }
+
+
+    // الإنجاز حسب الفئة
+
+    const catBars = document.getElementById("categoryBars");
+
+    if(catBars){
+
+        catBars.innerHTML="";
+
+        const categoryTotals={};
+
+        dates.forEach(date=>{
+
+            const key=formatDate(date);
+
+            let index=0;
+
+            tasks.forEach(group=>{
+
+                const cat=categoryFor(group.name);
+
+                if(!categoryTotals[cat]){
+
+                    categoryTotals[cat]={total:0,done:0};
+
+                }
+
+                group.items.forEach(()=>{
+
+                    categoryTotals[cat].total++;
+
+                    if(
+                        localStorage.getItem(
+                            storageKey(key,index)
+                        )==="true"
+                    ){
+
+                        categoryTotals[cat].done++;
+
+                    }
+
+                    index++;
+
+                });
+
+            });
+
+        });
+
+
+        Object.keys(categoryTotals).forEach(cat=>{
+
+            const data=categoryTotals[cat];
+
+            const pct =
+                data.total
+                ? Math.round(data.done/data.total*100)
+                : 0;
+
+            const row=document.createElement("div");
+
+            row.className="cat-bar-row";
+
+            row.innerHTML=`
+                <div>${cat}</div>
+
+                <div class="cat-bar-track">
+                    <div class="cat-bar-fill" style="width:${pct}%"></div>
+                </div>
+
+                <div style="text-align:left">${pct}%</div>
+            `;
+
+            catBars.appendChild(row);
+
+        });
+
+    }
+
+
+    // سلسلة الأيام المتتالية
+
+    const streakEl = document.getElementById("streakValue");
+
+    if(streakEl){
+
+        let streak=0;
+
+        let cursor=new Date();
+
+        for(let i=0;i<365;i++){
+
+            const key=formatDate(cursor);
+
+            const pct = dayPercent(key);
+
+            if(pct>=70){
+
+                streak++;
+
+                cursor.setDate(cursor.getDate()-1);
+
+            }else{
+
+                break;
+
+            }
+
+        }
+
+        streakEl.textContent = streak;
+
+    }
+
+}
+
+
+/* =========================
+   التنقل
+========================= */
+
+document.querySelectorAll(".tab")
+.forEach(button=>{
+
+    button.addEventListener("click",()=>{
+
+        document.querySelectorAll(".tab")
+            .forEach(x=>x.classList.remove("active"));
+
+        document.querySelectorAll(".view")
+            .forEach(x=>x.classList.remove("active"));
+
+        button.classList.add("active");
+
+        document.getElementById(
+            button.dataset.view
+        ).classList.add("active");
+
+        if(button.dataset.view==="stats"){
+
+            updateStats();
+
+        }
+
+    });
+
+});
+
+
+document.getElementById("currentDate")
+.textContent =
+    now.toLocaleDateString("ar-DZ",{
+        weekday:"long",
+        year:"numeric",
+        month:"long",
+        day:"numeric"
+    });
+
+
+/* =========================
+   الشهر
+========================= */
+
+let calendarDate=new Date();
+
+
+function renderMonth(){
+
+    const grid =
+        document.getElementById("monthGrid");
+
+    grid.innerHTML="";
+
+    const year=calendarDate.getFullYear();
+
+    const month=calendarDate.getMonth();
+
+
+    document.getElementById("monthTitle")
+        .textContent =
+        calendarDate.toLocaleDateString(
+            "ar-DZ",
+            {
+                month:"long",
+                year:"numeric"
+            }
+        );
+
+
+    days.forEach(name=>{
+
+        const el=document.createElement("div");
+
+        el.className="week-name";
+
+        el.textContent=name;
+
+        grid.appendChild(el);
+
+    });
+
+
+    const first =
+        new Date(year,month,1);
+
+    let start=first.getDay();
+
+    start=start===6 ? 0 : start+1;
+
+
+    for(let i=0;i<start;i++){
+
+        grid.appendChild(
+            document.createElement("div")
+        );
+
+    }
+
+
+    const daysInMonth =
+        new Date(year,month+1,0).getDate();
+
+
+    for(let day=1;day<=daysInMonth;day++){
+
+        const el =
+            document.createElement("div");
+
+        el.className="calendar-day";
+
+        const date =
+            new Date(year,month,day);
+
+        const key=formatDate(date);
+
+
+        if(key===todayKey){
+
+            el.classList.add("today");
+
+        }
+
+
+        const {completed:doneCount} = dayTotals(key);
+
+
+        el.innerHTML=`
+            <div class="calendar-day-number">
+                ${day}
+            </div>
+
+            <div style="color:#8d9aaa;font-size:12px">
+                ${
+                    doneCount>0
+                    ? `<span class="dot"></span>
+                       ${doneCount} مهمة`
+                    : "لا توجد مهام مكتملة"
+                }
+            </div>
+        `;
+
+        el.addEventListener("click",()=>{
+
+            showDayDetail(key,date);
+
+        });
+
+
+        grid.appendChild(el);
+
+    }
+
+}
+
+
+function showDayDetail(key,date){
+
+    let html = "";
+
+    let index=0;
+
+    tasks.forEach(group=>{
+
+        html += `<div class="day-detail-group"><b>${group.name}</b>`;
+
+        group.items.forEach(item=>{
+
+            const done =
+                localStorage.getItem(storageKey(key,index))==="true";
+
+            html += `<div class="day-detail-item${done?" done":""}">
+                ${done?"✔":"○"} ${item}
+            </div>`;
+
+            index++;
+
+        });
+
+        html += "</div>";
+
+    });
+
+
+    const custom = getCustomTasks(key);
+
+    if(custom.length){
+
+        html += `<div class="day-detail-group"><b>مهام إضافية</b>`;
+
+        custom.forEach(item=>{
+
+            const done =
+                localStorage.getItem(customKey(key,item.id))==="true";
+
+            html += `<div class="day-detail-item${done?" done":""}">
+                ${done?"✔":"○"} ${item.text}
+            </div>`;
+
+        });
+
+        html += "</div>";
+
+    }
+
+
+    const note = localStorage.getItem("note-"+key);
+
+    if(note){
+
+        html += `<div class="day-detail-group">
+            <b>📝 ملاحظة</b>
+            <div class="day-detail-item">${note}</div>
+        </div>`;
+
+    }
+
+
+    document.getElementById("alertTitle").textContent =
+        date.toLocaleDateString("ar-DZ",{
+            weekday:"long",
+            day:"numeric",
+            month:"long"
+        });
+
+    document.getElementById("alertText").textContent =
+        dayPercent(key)+"% نسبة الإنجاز";
+
+    document.querySelector(".alert-icon").textContent="📋";
+
+    document.getElementById("alertExtra").innerHTML =
+        `<div class="day-detail-list">${html}</div>`;
+
+    document.getElementById("alertOverlay").classList.add("show");
+
+}
+
+
+document.getElementById("prevMonth")
+.addEventListener("click",()=>{
+
+    calendarDate.setMonth(
+        calendarDate.getMonth()-1
+    );
+
+    renderMonth();
+
+});
+
+
+document.getElementById("nextMonth")
+.addEventListener("click",()=>{
+
+    calendarDate.setMonth(
+        calendarDate.getMonth()+1
+    );
+
+    renderMonth();
+
+});
+
+
+/* =========================
+   الأعمال الطارئة
+========================= */
+
+const emergencyInput =
+    document.getElementById(
+        "emergencyInput"
+    );
+
+const emergencyList =
+    document.getElementById(
+        "emergencyList"
+    );
+
+
+function loadEmergencies(){
+
+    const data =
+        JSON.parse(
+            localStorage.getItem(
+                "emergencies"
+            ) || "[]"
+        );
+
+
+    emergencyList.innerHTML="";
+
+
+    data.forEach((item,index)=>{
+
+        const row =
+            document.createElement("div");
+
+        row.className="emergency-item";
+
+        row.innerHTML=`
+            <span>🚨 ${item}</span>
+
+            <button class="delete">
+                حذف
+            </button>
+        `;
+
+
+        row.querySelector(".delete")
+        .addEventListener("click",()=>{
+
+            data.splice(index,1);
+
+            localStorage.setItem(
+                "emergencies",
+                JSON.stringify(data)
+            );
+
+            loadEmergencies();
+
+        });
+
+
+        emergencyList.appendChild(row);
+
+    });
+
+}
+
+
+document.getElementById("addEmergency")
+.addEventListener("click",()=>{
+
+    const value =
+        emergencyInput.value.trim();
+
+    if(!value)return;
+
+
+    const data =
+        JSON.parse(
+            localStorage.getItem(
+                "emergencies"
+            ) || "[]"
+        );
+
+
+    data.push(value);
+
+
+    localStorage.setItem(
+        "emergencies",
+        JSON.stringify(data)
+    );
+
+
+    emergencyInput.value="";
+
+    loadEmergencies();
+
+});
+
+
+/* =========================
+   نظام التنبيهات
+========================= */
+
+const defaultReminders = [
+
+    {
+        id:"freelance",
+        name:"💰 Freelance",
+        description:"البحث عن العملاء والمشاريع",
+        time:"09:00",
+        enabled:true
+    },
+
+    {
+        id:"brand",
+        name:"👕 البراند",
+        description:"الموقع والتصاميم والتسويق",
+        time:"11:30",
+        enabled:true
+    },
+
+    {
+        id:"tojarix",
+        name:"💻 TOJARIX",
+        description:"التواصل مع العملاء وDemo",
+        time:"14:00",
+        enabled:true
+    },
+
+    {
+        id:"learning",
+        name:"📚 التعلم",
+        description:"تعلم مهارة مفيدة للعمل",
+        time:"15:30",
+        enabled:true
+    },
+
+    {
+        id:"sport",
+        name:"🏋️ الرياضة",
+        description:"تمرين اليوم",
+        time:"17:00",
+        enabled:true
+    },
+
+    {
+        id:"social",
+        name:"👥 الأصدقاء / الاجتماع",
+        description:"اجتماع البراند أو وقت اجتماعي",
+        time:"19:00",
+        enabled:true
+    },
+
+    {
+        id:"sleep",
+        name:"🌙 النوم",
+        description:"ابدأ الاستعداد للنوم",
+        time:"23:30",
+        enabled:true
+    }
+
+];
+
+
+function getReminders(){
+
+    const saved =
+        localStorage.getItem(
+            "reminders"
+        );
+
+    if(!saved){
+
+        localStorage.setItem(
+            "reminders",
+            JSON.stringify(defaultReminders)
+        );
+
+        return defaultReminders;
+
+    }
+
+    try{
+
+        return JSON.parse(saved);
+
+    }catch{
+
+        return defaultReminders;
+
+    }
+
+}
+
+
+function renderReminders(){
+
+    const list =
+        document.getElementById(
+            "reminderList"
+        );
+
+    const reminders=getReminders();
+
+    list.innerHTML="";
+
+
+    reminders.forEach(reminder=>{
+
+        const row =
+            document.createElement("div");
+
+        row.className="reminder";
+
+        row.innerHTML=`
+
+            <div class="reminder-name">
+                ${reminder.name}
+
+                <small>
+                    ${reminder.description}
+                </small>
+            </div>
+
+            <input
+                class="time-input"
+                type="time"
+                value="${reminder.time}"
+                data-id="${reminder.id}"
+            >
+
+            <label class="switch">
+
+                <input
+                    type="checkbox"
+                    ${reminder.enabled?"checked":""}
+                    data-id="${reminder.id}"
+                >
+
+                تشغيل
+
+            </label>
+
+        `;
+
+
+        list.appendChild(row);
+
+    });
+
+
+    const soundToggle = document.getElementById("soundToggle");
+
+    if(soundToggle){
+
+        soundToggle.checked =
+            localStorage.getItem("soundEnabled") !== "false";
+
+        soundToggle.addEventListener("change",()=>{
+
+            localStorage.setItem(
+                "soundEnabled",
+                soundToggle.checked
+            );
+
+        });
+
+    }
+
+}
+
+
+document.getElementById("saveReminders")
+.addEventListener("click",()=>{
+
+    const reminders=getReminders();
+
+
+    reminders.forEach(reminder=>{
+
+        const timeInput =
+            document.querySelector(
+                `.time-input[data-id="${reminder.id}"]`
+            );
+
+        const checkbox =
+            document.querySelector(
+                `.switch input[data-id="${reminder.id}"]`
+            );
+
+
+        if(timeInput){
+
+            reminder.time =
+                timeInput.value;
+
+        }
+
+
+        if(checkbox){
+
+            reminder.enabled =
+                checkbox.checked;
+
+        }
+
+    });
+
+
+    localStorage.setItem(
+        "reminders",
+        JSON.stringify(reminders)
+    );
+
+
+    showAlert(
+        "تم حفظ التنبيهات",
+        "تم حفظ جميع أوقات التنبيه بنجاح.",
+        "💾"
+    );
+
+});
+
+
+/* =========================
+   إشعارات المتصفح
+========================= */
+
+function updateNotificationStatus(){
+
+    const status =
+        document.getElementById(
+            "notificationStatus"
+        );
+
+    if(!("Notification" in window)){
+
+        status.textContent =
+            "هذا المتصفح لا يدعم إشعارات المتصفح.";
+
+        status.className="status-text status-off";
+
+        return;
+
+    }
+
+
+    if(Notification.permission==="granted"){
+
+        status.textContent =
+            "الإشعارات مفعلة ✓";
+
+        status.className =
+            "status-text status-ok";
+
+    }
+    else if(Notification.permission==="denied"){
+
+        status.textContent =
+            "الإشعارات مرفوضة من المتصفح.";
+
+        status.className =
+            "status-text status-off";
+
+    }
+    else{
+
+        status.textContent =
+            "اضغط على تفعيل الإشعارات.";
+
+        status.className =
+            "status-text";
+
+    }
+
+}
+
+
+document.getElementById(
+    "enableNotifications"
+)
+.addEventListener("click",async()=>{
+
+    if(!("Notification" in window)){
+
+        showAlert(
+            "غير مدعوم",
+            "المتصفح الحالي لا يدعم إشعارات المتصفح.",
+            "⚠️"
+        );
+
+        return;
+
+    }
+
+
+    try{
+
+        const permission =
+            await Notification.requestPermission();
+
+        updateNotificationStatus();
+
+
+        if(permission==="granted"){
+
+            new Notification(
+                "نظامي الشخصي",
+                {
+                    body:"تم تفعيل الإشعارات بنجاح ✓"
+                }
+            );
+
+        }
+
+    }catch(error){
+
+        console.error(error);
+
+    }
+
+});
+
+
+/* =========================
+   الصوت
+========================= */
+
+function soundEnabled(){
+
+    return localStorage.getItem("soundEnabled") !== "false";
+
+}
+
+
+function playSound(){
+
+    if(!soundEnabled())return;
+
+    try{
+
+        const AudioContext =
+            window.AudioContext ||
+            window.webkitAudioContext;
+
+        if(!AudioContext)return;
+
+        const ctx=new AudioContext();
+
+        const oscillator =
+            ctx.createOscillator();
+
+        const gain =
+            ctx.createGain();
+
+
+        oscillator.connect(gain);
+
+        gain.connect(ctx.destination);
+
+
+        oscillator.frequency.value=800;
+
+        gain.gain.setValueAtTime(
+            0.001,
+            ctx.currentTime
+        );
+
+        gain.gain.exponentialRampToValueAtTime(
+            0.3,
+            ctx.currentTime+0.03
+        );
+
+        gain.gain.exponentialRampToValueAtTime(
+            0.001,
+            ctx.currentTime+0.5
+        );
+
+
+        oscillator.start();
+
+        oscillator.stop(
+            ctx.currentTime+0.5
+        );
+
+    }catch(error){
+
+        console.log(error);
+
+    }
+
+}
+
+
+/* =========================
+   نافذة التنبيه
+========================= */
+
+function showAlert(title,text,icon="⏰"){
+
+    document.getElementById(
+        "alertTitle"
+    ).textContent=title;
+
+    document.getElementById(
+        "alertText"
+    ).textContent=text;
+
+    document.getElementById(
+        "alertExtra"
+    ).innerHTML="";
+
+    document.querySelector(
+        ".alert-icon"
+    ).textContent=icon;
+
+    document.getElementById(
+        "alertOverlay"
+    ).classList.add("show");
+
+    playSound();
+
+}
+
+
+document.getElementById("closeAlert")
+.addEventListener("click",()=>{
+
+    document.getElementById(
+        "alertOverlay"
+    ).classList.remove("show");
+
+});
+
+
+/* =========================
+   إرسال إشعار
+========================= */
+
+function sendNotification(reminder){
+
+    if(
+        "Notification" in window &&
+        Notification.permission==="granted"
+    ){
+
+        try{
+
+            new Notification(
+                reminder.name,
+                {
+                    body:reminder.description,
+                    tag:"reminder-"+reminder.id
+                }
+            );
+
+        }catch(error){
+
+            console.log(error);
+
+        }
+
+    }
+
+}
+
+
+/* =========================
+   منع تكرار التنبيه
+========================= */
+
+function checkReminders(){
+
+    const reminders=getReminders();
+
+    const current=new Date();
+
+    const hours=
+        String(current.getHours())
+        .padStart(2,"0");
+
+    const minutes=
+        String(current.getMinutes())
+        .padStart(2,"0");
+
+    const currentTime=
+        hours+":"+minutes;
+
+
+    const today=
+        formatDate(current);
+
+
+    reminders.forEach(reminder=>{
+
+        if(!reminder.enabled)return;
+
+        if(reminder.time!==currentTime)return;
+
+
+        const firedKey=
+            "fired-"+today+"-"+reminder.id;
+
+
+        if(
+            localStorage.getItem(firedKey)
+            ==="true"
+        ){
+
+            return;
+
+        }
+
+
+        localStorage.setItem(
+            firedKey,
+            "true"
+        );
+
+
+        showAlert(
+            "حان وقت "+reminder.name,
+            reminder.description,
+            "⏰"
+        );
+
+
+        sendNotification(reminder);
+
+    });
+
+}
+
+
+setInterval(
+    checkReminders,
+    15000
+);
+
+
+/* =========================
+   تجربة التنبيه
+========================= */
+
+document.getElementById(
+    "testNotification"
+)
+.addEventListener("click",()=>{
+
+    showAlert(
+        "تجربة التنبيه",
+        "نظام التنبيهات يعمل بشكل صحيح.",
+        "🔔"
+    );
+
+
+    if(
+        "Notification" in window &&
+        Notification.permission==="granted"
+    ){
+
+        new Notification(
+            "نظامي الشخصي",
+            {
+                body:"هذه تجربة للإشعار."
+            }
+        );
+
+    }
+
+});
+
+
+/* =========================
+   النسخ الاحتياطي
+========================= */
+
+function collectAllData(){
+
+    const data={};
+
+    for(let i=0;i<localStorage.length;i++){
+
+        const k = localStorage.key(i);
+
+        data[k]=localStorage.getItem(k);
+
+    }
+
+    return data;
+
+}
+
+
+document.getElementById("exportBackup")
+.addEventListener("click",async()=>{
+
+    const data = collectAllData();
+
+    const json = JSON.stringify(data,null,2);
+
+    const filename =
+        "backup-نظامي-الشخصي-"+todayKey+".json";
+
+    try{
+
+        const downloads = await claude.use("downloads");
+
+        if(downloads){
+
+            await downloads.save({
+                filename,
+                data:json
+            });
+
+            return;
+
+        }
+
+    }catch(error){
+
+        console.log(error);
+
+    }
+
+
+    // fallback: تنزيل عادي إن لم تتوفر الخاصية
+
+    try{
+
+        const blob = new Blob([json],{type:"application/json"});
+
+        const url = URL.createObjectURL(blob);
+
+        const a = document.createElement("a");
+
+        a.href=url;
+
+        a.download=filename;
+
+        document.body.appendChild(a);
+
+        a.click();
+
+        a.remove();
+
+        URL.revokeObjectURL(url);
+
+    }catch(error){
+
+        showAlert(
+            "تعذر التنزيل",
+            "لم نتمكن من إنشاء ملف النسخة الاحتياطية.",
+            "⚠️"
+        );
+
+    }
+
+});
+
+
+document.getElementById("importBackupFile")
+.addEventListener("change",e=>{
+
+    const file = e.target.files[0];
+
+    if(!file)return;
+
+
+    const reader = new FileReader();
+
+    reader.onload = () => {
+
+        try{
+
+            const data = JSON.parse(reader.result);
+
+            localStorage.clear();
+
+            Object.keys(data).forEach(k=>{
+
+                localStorage.setItem(k,data[k]);
+
+            });
+
+
+            showAlert(
+                "تم الاستيراد",
+                "تم استعادة بياناتك بنجاح. سيتم تحديث الصفحة الآن.",
+                "✅"
+            );
+
+            setTimeout(()=>location.reload(),1500);
+
+        }catch(error){
+
+            showAlert(
+                "ملف غير صالح",
+                "تعذّرت قراءة ملف النسخة الاحتياطية.",
+                "⚠️"
+            );
+
+        }
+
+    };
+
+    reader.readAsText(file);
+
+    e.target.value="";
+
+});
+
+
+/* =========================
+   التشغيل
+========================= */
+
+renderWeek();
+
+renderMonth();
+
+loadEmergencies();
+
+updateStats();
+
+renderReminders();
+
+updateNotificationStatus();
+
+</script>
+
 </body>
 </html>
